@@ -60,7 +60,7 @@ select::-ms-expand{
     text-align:center;
     vertical-align:text-top;
     background-color:#cc0000;
-    padding:.5em;
+    padding:.25em;
     margin-left:1em;
 }
 
