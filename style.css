@@ -42,7 +42,7 @@ select::-ms-expand{
 }
 
 .mmm-form fieldset{
-    margin-bottom:1.5em;
+    margin-bottom:1em;
 }
 
 .mmm-form legend{
@@ -60,7 +60,7 @@ select::-ms-expand{
     text-align:center;
     vertical-align:text-top;
     background-color:#cc0000;
-    padding:.25em;
+    padding:.25em .5em;
     margin-left:1em;
 }
 
@@ -81,35 +81,43 @@ select::-ms-expand{
 }
 
 .mmm-form__checks{
-    display:flex;
-    flex-wrap:wrap;
 }
 
 .mmm-form__checks label{
-    display:flex;
-    align-items:center;
+    display:block;
     margin-right:.5em;
 }
 
-.mmm-form__checks label::before{
+.mmm-form__checks span{
+    margin-left:0;
+}
+
+.mmm-form__checks input + span{
+    display:flex;
+    align-items:center;
+    height:1em;
+}
+
+.mmm-form__checks input + span::before{
     content: "";
     display:inline-block;
     width:1em;
     height:1em;
     border:1px solid lightgray;
     background-color:#FFF;
+    vertical-align:middle;
     margin-right:.2em;
 }
 
-.mmm-form__checks--radio label::before{
+.mmm-form__checks--radio input + span::before{
     border-radius:50%;
 }
 
-.mmm-form__checks--checkbox label::before{
+.mmm-form__checks--checkbox input + span::before{
     border-radius:0;
 }
 
-.mmm-form__checks input:checked + label::before{
+.mmm-form__checks input:checked + span::before{
     background-color:#0099FF;
 }
 
@@ -120,7 +128,7 @@ select::-ms-expand{
 .mmm-form__selects::before{
     content:"";
     position:absolute;
-    top:calc(50% - 5px);
+    top:.8em;
     right:.5em;
     z-index:0;
     display:block;
@@ -134,7 +142,8 @@ select::-ms-expand{
     flex-wrap:wrap;
 }
 
-.mmm-form__btn{
+.mmm-form button,
+.mmm-form input[type=submit]{
     height:2em;
     border:1px solid lightgray;
     padding:.25em 1em;
@@ -145,11 +154,12 @@ select::-ms-expand{
     opacity:.7;
 }
 
-@media screen and (max-width:768px){
+.mmm-form__error{
+    font-size:.8em;
+    color:#cc0000;
+}
 
-    .mmm-form__checks{
-        display:block;
-    }
+@media screen and (max-width:768px){
 
     .mmm-form__btn{
         display:block;
