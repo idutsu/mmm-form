@@ -150,15 +150,11 @@ select::-ms-expand{
     border:1px solid lightgray;
     padding:.25em 1em;
     margin-right:.5em;
+    margin-top:1em;
 }
 
 .mmm-form__btn:hover{
     opacity:.7;
-}
-
-.mmm-form__error{
-    font-size:.8em;
-    color:#cc0000;
 }
 
 @media screen and (max-width:768px){

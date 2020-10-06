@@ -29,6 +29,4 @@
     $(document).on('wpcf7invalid',function(event){
     });
 
-
-
 })(jQuery);
