@@ -1,30 +1,30 @@
 <div class="mmm-form">
     <fieldset>
-        <legend><span class="mmm-form__title">名前</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">名前（必須）</span></legend>
         [text* your-name]
     </fieldset>
-    <fieldset>
-        <legend><span class="mmm-form__title">メールアドレス</span><span class="mmm-form__require">必須</span></legend>
+<fieldset>
+        <legend><span class="mmm-form__title">メールアドレス（必須）</span></legend>
         [email* your-email]
     </fieldset>
     <fieldset>
-        <legend><span class="mmm-form__title">電話番号</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">電話番号（必須）</span></legend>
         [tel* your-tel]
     </fieldset>
     <fieldset>
-        <legend><span class="mmm-form__title">性別</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">性別（必須）</span></legend>
         <div class="mmm-form__checks mmm-form__checks--radio">[radio your-sex use_label_element default:1 "男" "女"]</div>
     </fieldset>
     <fieldset>
-        <legend><span class="mmm-form__title">連絡手段</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">連絡手段（必須）</span></legend>
         <div class="mmm-form__checks mmm-form__checks--checkbox">[checkbox* your-device use_label_element "電話" "メール" "FAX"]</div>
     </fieldset>
     <fieldset>
-        <legend><span class="mmm-form__title">血液型</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">血液型（必須）</span></legend>
         <div class="mmm-form__selects">[select* your-blood include_blank "A型" "B型" "O型" "AB型"]</div>
     </fieldset>
     <fieldset>
-        <legend><span class="mmm-form__title">メッセージ</span><span class="mmm-form__require">必須</span></legend>
+        <legend><span class="mmm-form__title">メッセージ（必須）</span></legend>
         [textarea* your-message]
     </fieldset>
     <div class="mmm-form__btns">[submit "送信"]</div>

@@ -19,7 +19,7 @@
     });
 
     $(document).on('wpcf7mailsent',function(event){
-        message = 'メールの送信に成功しました。';
+        message = '';
     });
 
     $(document).on('wpcf7mailfailed',function(event){

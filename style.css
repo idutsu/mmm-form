@@ -34,7 +34,7 @@ select::-ms-expand{
 }
 
 .mmm-form{
-    font-size:1.2rem;
+    font-size:1rem;
 }
 
 .mmm-form *{
@@ -47,7 +47,7 @@ select::-ms-expand{
 
 .mmm-form legend{
 	line-height:1;
-    margin-bottom:.5em;
+    margin-bottom:1em;
 }
 
 .mmm-form__title{
@@ -55,17 +55,6 @@ select::-ms-expand{
     font-weight:bold;
 }
 
-.mmm-form__require{
-    display:inline-block;
-	line-height:inherit;
-    font-size:.5em;
-    color:#FFF;
-    text-align:center;
-    vertical-align:text-top;
-    background-color:#cc0000;
-    padding:.5em;
-    margin-left:1em;
-}
 .mmm-form input[type=text],
 .mmm-form input[type=email],
 .mmm-form input[type=tel],
@@ -150,7 +139,6 @@ select::-ms-expand{
     border:1px solid lightgray;
     padding:.25em 1em;
     margin-right:.5em;
-    margin-top:1em;
 }
 
 .mmm-form__btn:hover{
